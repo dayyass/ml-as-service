@@ -13,6 +13,8 @@
 venv
 .idea
 
-python_repo_template.egg-info
+ml_as_service/ml/data/data
+
+ml_as_service.egg-info
 build
 dist
