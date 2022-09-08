@@ -9,17 +9,17 @@ python inference.py \
 ```
 
 ### Service
-Launch the service:
+Launch the Flask service:
 ```
 python api.py
 ```
 
-# TODO:
+Launch the Flask + Gunicorn service:
 ```
 gunicorn --config gunicorn.conf.py api:app
 ```
 
-# TODO:
+Launch the Flask + Gunicorn + Docker service:
 ```
 docker build -t ml_as_service .
 docker run -p 5000:5000 ml_as_service
