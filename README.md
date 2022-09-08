@@ -6,3 +6,4 @@ Transform ML models to Service with:
 
 # Examples
 - [ML](ml_as_service/ml)
+- [NLP](ml_as_service/nlp)
