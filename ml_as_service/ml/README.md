@@ -38,6 +38,6 @@ curl http://localhost:5000/info
 ```
 - `predict`:
 ```
-curl http://localhost:5000/predict -F "email=@ml_as_service/ml/email.txt"
+curl http://localhost:5000/predict -F "email=@email.txt"
 # {"result": "rec"}
 ```
