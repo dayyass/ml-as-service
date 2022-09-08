@@ -6,6 +6,9 @@ app = Flask(__name__)
 api = Api(app)
 
 
+model = load_model(path_to_model="models/model.joblib")
+
+
 class Health(Resource):
     def get(self):
         return {"status": "UP"}
@@ -28,11 +31,7 @@ def prepare_data(flask_request: request) -> str:
 class Predict(Resource):
     def post(self):
         email = prepare_data(flask_request=request)
-
-        # TODO: refactor model init
-        model = load_model(path_to_model="models/model.joblib")
-
-        result = inference(model, email)
+        result = inference(model=model, email=email)
         return {"result": result}
 
 
