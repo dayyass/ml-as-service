@@ -14,6 +14,7 @@ venv
 .idea
 
 ml_as_service/ml/data/data
+ml_as_service/nlp/models/bert-base-NER
 
 ml_as_service.egg-info
 build
